@@ -11,5 +11,5 @@
     "default_icon": "icon48.png",
     "default_popup": "popup.html"
   },
-  "permissions": ["management", "https://secure.flickr.com/"]
+  "permissions": ["management"]
 }

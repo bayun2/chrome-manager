@@ -27,7 +27,7 @@ chrome.management.getAll(function(arr) {
     itemWrap.addEventListener('click', function(e) {
       var curItem = e.currentTarget;
       var itemId = curItem.getAttribute('data-id');
-      var enabled = curItem.getAttribute('data-enabled') === true ? true: false;
+      var enabled = curItem.getAttribute('data-enabled') === 'true' ? true: false;
       chrome.management.setEnabled(itemId, !enabled);
       curItem.className = !enabled ? 'itemwrap' : 'itemwrap disabled';
       curItem.setAttribute('data-enabled', !enabled);
