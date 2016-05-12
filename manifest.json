@@ -1,0 +1,15 @@
+{
+  "name": "rwt-chrome-manager",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Management has been installed the Google plug-in",
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "browser_action": {
+    "default_icon": "icon48.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["management", "https://secure.flickr.com/"]
+}
