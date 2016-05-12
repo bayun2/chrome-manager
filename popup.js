@@ -5,6 +5,9 @@ chrome.management.getAll(function(arr) {
   var enableDom;
   var itemCName;
   arr.forEach(function(item, index, arr) {
+    if (item.name === 'rwt-chrome-manager') {
+      return false;
+    }
     itemWrap = document.createElement('div');
     if(item.icons && item.icons[0] && item.icons[0].url) {
       imgDom = document.createElement('img');
